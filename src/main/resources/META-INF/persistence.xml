@@ -11,7 +11,7 @@
         <class>model.Proizvodjac</class>
         <class>model.Kupac</class>
         <class>model.Laptop</class>
-        <class>model.Pc</class>
+        <class>model.Desktop</class>
         <class>model.Placanje</class>
         <class>model.Porudzbina</class>
         <class>model.Racunar</class>

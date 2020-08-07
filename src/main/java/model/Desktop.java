@@ -3,16 +3,16 @@ package model;
 import javax.persistence.*;
 
 @Entity
-@DiscriminatorValue(value = "pc")
-public class Pc extends Racunar{
+@DiscriminatorValue(value = "desktop")
+public class Desktop extends Racunar{
 
 
    private String napajanje;
 
-    public Pc() {
+    public Desktop() {
     }
 
-    public Pc(String model, Proizvodjac proizvodjac, String procesor, Integer hdd, Integer ramMemorija, double cena, String tip, String napajanje) {
+    public Desktop(String model, Proizvodjac proizvodjac, String procesor, Integer hdd, Integer ramMemorija, double cena, String tip, String napajanje) {
         super(model, proizvodjac, procesor, hdd, ramMemorija, cena, tip);
         this.napajanje = napajanje;
     }
@@ -28,7 +28,7 @@ public class Pc extends Racunar{
 
     @Override
     public String toString() {
-        return "Pc{" +
+        return super.toString() + "Desktop{" +
                 "napajanje='" + napajanje + '\'' +
                 '}';
     }
